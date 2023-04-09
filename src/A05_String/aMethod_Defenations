@@ -1,0 +1,39 @@
+
+METHOD              DEFINITION                                                  OUT
+concat()            Appends a string to the end of another string               String
+length()            Returns the length of a specified string                    int
+indexOf()           Returns the position of the first found occurrence of
+                    specified characters in a string                            int
+lastIndexOf()       Returns the position of the last found occurrence of
+                    specified characters in a string                            int
+charAt()            Returns the character at the specified index (position)     char
+substring()         Extracts the characters from a string, beginning
+                    at a specified start position, and through the specified
+                    number of character                                         String
+isEmpty()           Checks whether a string is empty or not                     boolean
+contains()          Checks whether a string contains a sequence of characters   boolean
+equals()            Compares two strings. Returns true if the strings are
+                    equal, and false if not                                     boolean
+equalsIgnoreCase()  Compares two strings, ignoring case considerations          boolean
+startsWith()        Checks whether a string starts with specified characters    boolean
+endsWith()          Checks whether a string ends with the specified
+                    character(s)                                                boolean
+toLowerCase()       Converts a string to lower case letters                     String
+toString()          Returns the value of a String object                        String
+toUpperCase()       Converts a string to upper case letters                     String
+trim()              Removes whitespace from both ends of a string               String
+replace()           Searches a string for a specified value, and returns
+                    a new string where the specified values are replaced        String
+replaceFirst()      Replaces the first occurrence of a substring that matches
+                    the given regular expression with the given replacement     String
+replaceAll()        Replaces each substring of this string that matches the
+                    given regular expression with the given replacement         String
+split()             Splits a string into an array of substrings                 String[]
+-------------------------------------------------------------------------------------------
+
+int num1 = Integer.parseInt(str1);      This script convert string type number into integer type
+                                        if there is a character in str1 gives error
+boolean bln1 = Boolean.valueOf(str4);   ...Boolean.parseBoolean(str4); ile ayni
+
+
+

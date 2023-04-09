@@ -1,0 +1,24 @@
+Math Class
+
+Method              Description
+Math.abs()          It will return the Absolute value of the given value.
+Math.max()          It returns the Largest of two values.
+Math.min()          It is used to return the Smallest of two values.
+Math.round()        It is used to round of the decimal numbers to the nearest value.
+Math.sqrt()         It is used to return the square root of a number.
+Math.pow()          It returns the value of first argument raised to the power to second argument.
+Math.ceil()         It is used to find the smallest integer value that is greater than or equal to the argument
+                    or mathematical integer.
+Math.floor()        It is used to find the largest integer value which is less than
+                    or equal to the argument and is equal to the mathematical integer of a double value.
+Math.random()       It returns a double value with a positive sign, greater than or equal to 0.0 and less than 1.0.
+
+(int)( Math.random() * ((max-min)+1) ) + min        Formula of random number between to ranges
+-----------------------------------------------------------------------------------------------------------------------
+
+Random Class
+
+Random random = new Random();       initialize. if you will write Random(seed), it will give all time same random number
+
+random.nextInt()                    random integer if you will write .nextInt(bound), it will give (0 <= n < bound) random n.
+random.nextFloat()                  random Float

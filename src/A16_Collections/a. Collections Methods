@@ -1,0 +1,14 @@
+import java.util.Collections;
+
+Usefull Methods of Collection Class for ArrayList
+
+	 /*
+     	 * Collections.sort(intList);                       Sorts array List
+     	 * Collections.max(intList);                        Gives max number in ArrayList
+     	 * Collections.min(intList);                        Gives min number in ArrayList
+     	 * Collections.reverse(intList);                    reverse ArrayList
+     	 * Collections.fill(intList, 101);                  fills with 101 all elements in ArrayList
+     	 * Collections.replaceAll(intList, 101, 404);       replace first element with second one in ArrayList
+     	 * Collections.addAll(strList, strArray);           adds all elements of array into ArrayList
+     	 * Collections.swap(intList, 0,3);                  swap 0th idx and 3rd idx
+     	 */

@@ -1,0 +1,31 @@
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+
+HashSet             bildigimiz kume . HashSet'de elementlerin hangi sirayla eklendigi onemli degildir
+
+LinkedHashSet'in    farki ise sadece ekleme siralamasinin onemli olmasidir.
+
+TreeSet             in ise iki farklari: 1.Ogeleri artan siraya gore dizer, 2. null ogeye izin vermez.
+                    Ha birde TreeSet digerlerine gore ciddi hizlidir.
+
+(Denemelerimde alfabe yada rakam koyarsan HashSet de sirayla yaziyor. kelime yazarsan rasgele salliyor.)
+
+
+// initialize
+HashSet<Integer> hashSet = new HashSet<>();
+
+// most of methods of HashSet and ListArray ar same
+hashSet.add(1);             // add element
+
+//DIKKAT!!! metodlari asagidaki gibi kullanirsan A setini kaybedersin.
+// Onun yerine dummy bir set olustur
+A.addAll(B);                // adds all elements of B into A.
+A.retainAll(B);             // A is intersection of A and B.
+A.removeAll(B);             // A is difference between A and B.
+
+boolean check = hashSet.contains("Ali");            are there element in HashSet like "Ali"
+HashSet<Integer> set1 = new HashSet<>(arrayList);   easy method for adding ArrayList into HashSet
+

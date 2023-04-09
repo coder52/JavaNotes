@@ -1,0 +1,42 @@
+
+Interface
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java
+interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
+In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body.
+
+Why use Java interface?
+There are mainly three reasons to use interface. They are given below.
+
+* It is used to achieve abstraction.
+* By interface, we can support the functionality of multiple inheritance.
+* It can be used to achieve loose coupling.
+
+*** The Java compiler adds public and abstract keywords before the interface method.
+    Moreover, it adds public, static and final keywords before data members.
+
+// in interfaces every field is 'public final static' by default
+    // therefor we have to initialize it.
+    // Yazsak da yazmasakda olur
+    // public final int batteryLife = 100;
+    int batteryLife = 100;
+
+    // There is no constructor in interface
+    // Electric(){}
+
+    // every method in interface 'public abstract' by default
+    // yazmasak da olur
+    // public abstract void changeBattery();
+    String changeBattery();
+
+    // interface doesn't allow non-abstract method except static and default methods.
+    public static void print(){
+        System.out.println("Electric");
+    }
+
+// Task2 Main icersinde dikkat edersen gorursun ki implement edilmis interfacelerin metodlarina instance uzerinden ulasmak icin
+    // casting kullaniliyor. Yada animal demicen sail yada fly dicen.
+
+// Polymorphism in guzel bir uygulamasini Task3 de goruyoruz. Main file icersinde bir suru overload yapmaktan kurtuluyoruz.

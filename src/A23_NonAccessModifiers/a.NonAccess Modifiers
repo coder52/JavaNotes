@@ -1,0 +1,34 @@
+
+// NonAccess den kasit erisimle ilgisi olmayan modifiers demektir. Bu modifierler erisimle ilgili vazife
+// yapmazlar. Erisimle ilgili modifierler Access Modifiers konusunda anlatilmisti. Dolayisiyla NonAccess ve Access modifiersler
+// ayni anda kullanilabilirler. (public final int num=10; gibi.)
+
+
+MODIFIER                DESCRIPTION
+final               The class cannot be inherited by other classes
+abstract            The class cannot be used to create objects
+
+
+final               Variables, Attributes and methods cannot be overridden/modified. But can initialize in Class by constructor
+                    Bu modifier bir kere atandiktan sonra degismemesi gereken variabllar icin ideal.
+                    final olan bir variable class icinde baslatilabiliyor (constructora arguman olarak verilebiliyor yani
+                    ornekleme sirasinda baslatilabiliyor) ama sonra degistirilemiyor (Ne class icinde ne de ornek uzerinden.).
+                    final metodlar override olmazlar.
+                    Eger bir array, string yada  ArrayList final ayarlanirsa elementler degistirilebilir ama array tekrar assign yapilamaz.
+                    final stringin replace methodu yeni bir kopya olusturdugundan print icersinde degisiklik gosterirken aslinda string
+                    degismemistir. replacenin olusturdugu yeni kopya ayni isme assign da yapilamaz.
+
+static              Attributes and methods belongs to the class, rather than an object
+                    Bu modifier ile tanimlanan degiskene yada metoda classi orneklemeden class isminden direk ulasilabiliyor.
+                    Ayni zamanda ornek uzerinden de ulasabilirsiniz.
+                    DIKKAT eger static variabla ulasip degistirirsen sonra ki orneklerde yeni hali olusacaktir
+                    Eger static koyulmadi ise ona class ismiyle ulasamaz degistiremezsin. Sadece ornekleyerek yapabilirsin bunlari.
+
+abstract            Can only be used in an abstract class, and can only be used on methods. The method
+                    does not have a body, for example abstract void run();. The body is provided by the
+                    subclass (inherited from)
+
+transient           Attributes and methods are skipped when serializing the object containing them
+
+synchronized        Methods can only be accessed by one thread at a time volatile The value of an attribute
+                    is not cached thread-locally, and is always read from the "main memory"

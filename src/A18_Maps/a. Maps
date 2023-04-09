@@ -1,0 +1,28 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
+
+
+HashMap         Pythonda'ki dictionarylerin yaptigini yapar. Direk print edilebilir.
+LinkedHashMap   kaydedilis sirasini korur. bir bos key alir
+TreeMap         Keyleri artan siraya gore dizer. Bos key almaz.
+
+
+
+
+Methods
+/*
+     * map.put("Kemal", 5000d);                     Yeni element ekler. key zaten varsa valuesunu degistirir.
+     *                                              Value degistirmek icin replace daha iyi olabilir.
+     *                                              Cunku replace de yazilan key yoksa hic bir sey yapmiyor.
+     * map2.putAll(map);                            map in icini map2 ye kopyalar
+     * map.replace(101, "Vijay", "Ravi");           101 nolu keye yazdi Vijay uctu gitti. 101 nolu key yoksa hic bir sey yapmaz
+     * map.replaceAll((k,v) -> "Ajay");             keyler degismeden butun valueler Ayaj olur     *
+     * map.remove("Ali");                           oge cikarir
+     * Double salary = map2.get("Kemal");           verilen keyin valuesunu verir. Burda value double imis
+     * boolean check = map.containsKey("Ali");      parantez icinde ki keylerden mi?
+     * boolean check = map.containsValue(30000);    parantez icinde ki valuelerden mi?
+     * Set<String> keys = map.keySet();             keylerin kumesini verir
+     * map2.entrySet();                             kullanimina asagidan bak. For dongusunde map kullanamak icin
+     * map.size()	                                This method returns the number of entries in the map.
+     */

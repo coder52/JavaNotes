@@ -1,0 +1,9 @@
+create interface ReadFiles with methods:
+open(), read(), save(), close()
+
+Part 1
+add concreate classes as:
+1.TxtFile
+2. PowerPointFile
+3. DMGFile //Difinition of DMG. DMG(Disk IMaGe) The file format used in the Mac for distributing software.
+4. ExeFile // EXE is a file extention for an executable file format in Windows OS

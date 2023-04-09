@@ -1,0 +1,19 @@
+Abstract class in Java
+A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods.
+It needs to be extended and its method implemented. It cannot be instantiated.
+
+Points to Remember
+* An abstract class must be declared with an abstract keyword.
+* It can have abstract and non-abstract methods.
+* It cannot be instantiated. (can not make object of abstract class)
+* It can have constructors and static methods also. (constructors can not be abstract)
+* It can have final methods which will force the subclass not to change the body of the method.
+* Abstract class can inherit (extends) abstract class. You mustn't implement in this time abstract methods.
+*
+*
+
+Rule: If there is an abstract method in a class, that class must be abstract.
+
+Rule: If you are extending an abstract class that has an abstract method, you must either provide the implementation
+of the method or make this class abstract.
+

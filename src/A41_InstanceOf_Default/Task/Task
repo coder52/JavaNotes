@@ -1,0 +1,20 @@
+create interface Food with methods:
+cook(), taste()
+
+Part 1
+add concrete classes as:
+Kebab==> marinade(), grill()
+Besparmak:boil()
+Karniyarik:bake()
+Maklube: fry(), design()
+
+Part 2
+create class Kitchen with method cook(Food food);
+and cook every foood correctly
+
+ex: kebab first should be marinaded then grilled
+NOTE: no static methods here
+
+Part3
+generate class TechnoCafe with several foods to serve
+cook them and serve =)

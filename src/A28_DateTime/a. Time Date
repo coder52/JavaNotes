@@ -1,0 +1,25 @@
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
+   or
+java.time.*
+
+LocalDate          Contains just a date, no time and no time zone. (19/12/1989, birthday this year)
+LocalTime          Contains just a time, no date and no time zone. (midnight, ts. morning class start time -> 9:00am)
+LocalDateTime      Contains both a date and time but no time zone. (00:00 01/01/2021 new year, 20:10 05/11/2020 iftar)
+
+
+Formatting using DateTimeFormatter
+DateTimeFormatter shortDateTime = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+                                = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
+                                = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+ifadelerle format olusturup sonra olusturdugumuz local
+ifadelerle format olusturum sonra olusturdugumuz localDate objectinin .format() metoduna yerlestirerek format olustururuz.
+
+localDate.format(shortDateTime);  // bunu ister print et ister ne yaparsan yap
+
+//Eger kendi format yontemini kullanmak istersen iste bunu kullanabilirsin
+DateTimeFormatter f = DateTimeFormatter.ofPattern("hh:mm MM dd yyy");

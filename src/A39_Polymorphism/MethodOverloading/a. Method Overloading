@@ -1,0 +1,13 @@
+
+There are two ways to overload the method in java
+
+    1.By changing number of arguments
+    2.By changing the data type
+
+In java, Method Overloading is not possible by changing the return type of the method only.
+
+Note: Compile Time Error is better than Run Time Error. So, java compiler renders compiler time error
+if you declare the same method having same parameters.
+
+You can have any number of main methods in a class by method overloading.
+But JVM calls main() method which receives string array as arguments only.

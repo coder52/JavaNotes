@@ -1,0 +1,25 @@
+Anladigim kadariyla Generics'ler sayesinde turlerle ilgili hatalarin compiler tarafindan ayiklanmasi saglanmis. Yani eskiden
+mesela
+        List list = new ArrayList();
+seklinde tanimlaniyormus. Daha sonra liste acilirken icersinde bulunan seyin turune gore casting yapilmasi gerekirmis.
+Generics'ler sasyesinde
+        List<Integers> list = new ArrayList();
+seklinde tanimlanarak list'in icersindekinin ne olabilecegi compiler'a ogretilmistir ve yazarin type hatasi yapmasina engel
+olunmustur. Bu durumda genel olarak Generics icin 3 faydadan bahsedilebilir.
+
+1. Type-Safety : Yani programciyi collectionlarda tek type object kullanmaya mecbur birakir.
+2. Type casting is not required : Collectionlar'i kullanirken casting yapmak zorunda klamayiz.
+3. Compile-Time Checking : Boylece type hatalari compile time'de check yapilabilir.
+
+Generic class, method v.s yazilirken type'lar icin bazi harflar sembol olarak kullanilir. Bunlardan bazilari soyle:
+    T - Type
+    E - Element
+    K - Key
+    N - Number
+    V - Value
+
+List<?> Generics bu sekilde gosterilecek olursa ? (Unbounded Wildcard) her turu temsil eder bunun kullanildigi bir method icersinde her turun kabul
+edildigi islemler yurutulmelidir.
+
+ArrayList<? extends Number>     Bura da ? bounded wildcard diye adlandirilir ve Number class'in tum child class'larini
+(yani Integer, Double, ...) temsil eder.

@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Collections;
+Not: ArrayList'ler C++'da ki vector'lere benziyor.
+//1D ArrayList
+ArrayList<String> list = new ArrayList<String>();
+2D ArrayList
+// 2D ArrayLists
+ArrayList<ArrayList<Integer>> list2D = new ArrayList<>();
+
+     *We dont need any extra method for printing it
+	 * list.add("John");            add element on the ArrayList
+	 * list.get(0);                 get element from the 1D ArrayList
+	 * list2D.get(0).get(0)         get element from the 2D ArrayList
+	 * list.size();                 gives size of ArrayList
+	 * list.set(0, "Bulut");        update specific idx of ArrayList
+	 * list.remove("Elvis");        removes an element
+	 * list.remove(idx);            removes an element on specific idx
+	 * list.isEmpty();              check ArrayList is empty
+	 * list.clear();                removes all element of ArrayList
+
+	 Useful Methods of Collection Class for ArrayList
+
+	 /*
+     	 * Collections.sort(intList);                       Sorts array List
+     	 * Collections.max(intList);                        Gives max number in ArrayList
+     	 * Collections.min(intList);                        Gives min number in ArrayList
+     	 * Collections.reverse(intList);                    reverse ArrayList
+     	 * Collections.fill(intList, 101);                  fills with 101 all elements in ArrayList
+     	 * Collections.replaceAll(intList, 101, 404);       replace first element with second one in ArrayList
+     	 * Collections.addAll(strList, strArray);           adds all elements of array into ArrayList
+     	 */
+
+   // easy method for adding ArrayList into HashSet
+   HashSet<Integer> set1 = new HashSet<>(arrayList);

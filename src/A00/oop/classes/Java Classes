@@ -1,0 +1,34 @@
+How to use it
+
+Super Class
+
+1. public class <class_name> {}
+2. public abstract class <class_name> {}
+3. public interface <class_name> {}
+
+Subclass/Childclass:
+
+1. public class <Child_class_name> extends <super_class_name>{}
+
+2. public class <Child_class_name> extends <abstract_super_class_name>{}
+
+3. public class <Child_class_name> implements <interface_super_class_name_1>, <interface_super_class_name_2>, ...{}
+
+4. public class <Child_class_name> extends <abstract_super_class_name> implements <interface_super_class_name_1>, <interface_super_class_name_2>, ...{}
+
+Abstract Class
+
+1. public abstract class <abstract_class_name>{}
+
+2. public abstract class <abstract_class_name> extends <abstract_class_name>{}
+
+3. public abstract class <abstract_class_name> implements <interface_super_class_name_1>, <interface_super_class_name_2>, ...{}
+
+4. public abstract class <abstract_class_name> extends <abstract_class_name> implements <interface_super_class_name_1>, <interface_super_class_name_2>, ...{}
+
+Interfaces
+
+1. public interface <interface_class_name>{}
+
+2. public interface <interface_class_name> extends <interface_super_class_name_1>, <interface_super_class_name_2>, ...{}
+

@@ -1,0 +1,32 @@
+Array methods
+
+// Arrays.toString(array)                   get String print of array in one line (otherwise you can not get print of all
+                                            elements in one print command)
+// Arrays.sort(array);                      to sort array in natural order
+// Arrays.sort(arrayName, fromIdx, toIdx);
+// Arrays.equals(array1, array2)            check if both of arrays have same order of values
+// Arrays.fill(array, value );              fill the array with provided value
+// Arrays.binarysearch(array, value);       return index of given value in array, otherwise returns -1
+
+initialize
+//0th
+String[] array = new String[3];
+String[][] array2D = new String[3][3];
+
+// 1st way
+int[] intArray = {33, 35, 49, 77, 89} ;
+String[] strArr = {"Alice", "Bob", "John"};
+String[][] strArray2D = {
+						{"asd", "dfr"},
+						{"asdasd", "asdfe", "hgfdk"},
+						{"safdfght","gfdg", "dgny"}
+		};
+
+// 2nd way
+int size = 10;
+int[] arr = new int[size];
+
+
+ACCESS Elements
+arr[i]
+arr2D[i][j]

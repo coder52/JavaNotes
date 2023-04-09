@@ -1,0 +1,51 @@
+Create Bit set
+
+    BitSet bitSet = new BitSet();           // 64bit bilgisayarda 64 tane 0 (false) elemanli bitset olusturur.
+    BitSet bitSet = new BitSet(10000);      // 10000 tane 0(false) elemanli bitset olusturur
+
+* set icersinde ki bir elementin set edilmesi demek onun 1 olarak degistirilmesi demektir. clear yapilarak tekrar sifir yapilir.
+ilk olusturulan bitset'in tum elemanlari 0'dir.
+
+bitSet.set(10)              // 10. elemani 1 yapar.
+                            // System.out.println(bitSet); yazarsan {10} cikar
+bitSet.set(10,20);          // 10 dahil, 20 haric aradakilerin hepsini set (yani 1) yapar.
+                            // System.out.println(bitSet); yazarsan {10, 11, 12, 13, 14, 15, 16, 17, 18, 19} oldugunu gorursun.
+bitSet.set(10, false);      // 10. biti 0 yapar.
+bitSet.set(20, 30, false);  // 20 dahil, 30 haric aradaki sayilari false yapar
+
+bitSet.get(10)              // 10. elementin value'sini cagirir.
+
+bitSet.clear(15, 17);       // 15 dahil, 17 haric aradaki sayilari 0 yapar.
+
+BitSet newBitSet = bitSet.get(10, 20);  // bu ifade bitSet'in 10(dahil)'dan 20(haric)'e kadar bitlerini (true-false farketmez)
+                                        // alir ve newBitSet'e sifirindan basliyarak kopyalar.
+
+bitSet.flip(10);            // 10. idx'de ki elemanin degerini tersine cevirir. Yani true ise false, false ise true yapar.
+bitSet.flip(10,17);         // 10'dan 17'ye kadar birlerin degerini tersine cevirir.
+
+bitSet.size()               // set'in kac bitten olustugunu gosterir.
+bitSet.cardinality()        // set'in icersinde ki set sayisini (yani kac tane true bit oldugunu) gosterir
+bitSet.length()             // set icersinde ki en sonuncu set(yani true)'dan bir sonra ki idx'i verir.
+                            // yani mesela en son 10. idx true ise 11 dondurecek
+
+bitSet.isEmpty()            // eger tum idx'ler false ise true donderir. Bir tane bile set varsa false donderir.
+
+first.intersects(second)    // first ila second'in ayni idx'lerinden 1 tanesinde bile her ikisi set ise true donderir.
+                            // yani mesela first'un 10. idx ile second'un 10. idx'i set (yani 1) olsa true donderecek
+
+first.and(second)           // first ila second arasinda and islemi yapar ve first'e kaydeder. second'da bir degisim olmaz
+first.xor(second);          // first ila second arasinda xor islemi yapar ve first'e kaydeder. second'da bir degisim olmaz
+                            // xor islemi (1xor1=0, 0xor0=0, 0xor1=1, 1xor0=1)
+
+Java 8 ile birlikte bir Bitset icinde ki setler icin .stream()  methodu kullanilabilir.
+stream'in de bir cok metodlari var kullanisli.
+
+bitSet.stream().forEach(System.out::println);   // bu kod bitSet icinde ki setlerin idx'lerini consola alt alta basar
+bitSet.stream().count()                         // stream'in count metodu ile set olan bit sayisi bulunabilir.
+
+IntStream indiceStream = bitset.stream();                           // bitset'in setlerinin idx'lerini streame kopyalar.
+System.out.println("stream of indices: "+indiceStream);             // kopyalanan idx'leri basar
+System.out.println("size of stream1: "+indiceStream.count());       // kac tane kopyalanmis idx var? gosterir.
+
+
+

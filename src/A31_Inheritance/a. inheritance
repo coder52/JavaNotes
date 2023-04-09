@@ -1,0 +1,17 @@
+//Note: Multiple inheritance is not supported in Java through class.
+
+//There are 5 types of inheritance in Java:
+	1. Single
+	2. Multilevel
+	3. Hierarchical
+	4. Multiple (No in Java)
+	5. Hybrid	(No in Java)
+
+// Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved;
+ otherwise, aggregation is the best choice.
+
+// final classes can not inherit. But we can inherit final attribute/field in class
+  // and you know that the final attributes can not reassign after initial assignment 
+  	//in definition or in constructor.
+
+// Final methods can not override or modified

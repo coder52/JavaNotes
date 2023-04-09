@@ -1,0 +1,13 @@
+// This code inside static block is executed only once: the first time you make an object of that 
+class or the first time you access a static member of that class (even if you never make an 
+object of that class).
+
+//Also, static blocks are executed before constructors.
+
+// You can initialize static fields by using to static blocs
+
+// Is used to initialize the static data member.
+
+//It is executed before the main method at the time of classloading.
+
+// If there are static blocs in super class and child class, the static block in super class execute first
