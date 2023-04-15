@@ -31,7 +31,7 @@ girdisi icin sonuc;
         cbb 1
         bcc 0
         dee 0
-        olmalidir
+olmalidir.
  */
 class Checker implements Comparator{
     public int compare(Object obj1,Object obj2){
