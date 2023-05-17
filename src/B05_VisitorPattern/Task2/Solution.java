@@ -1,6 +1,7 @@
 package B05_VisitorPattern.Task2;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 enum Color {
     RED, GREEN
@@ -89,13 +90,17 @@ class SumInLeavesVisitor extends TreeVis {
 }
 
 class ProductOfRedNodesVisitor extends TreeVis {
+    int total=1;
     public int getResult() {
         //implement this
-        return 1;
+        return total;
     }
 
     public void visitNode(TreeNode node) {
         //implement this
+        if(node.getColor().equals(Color.RED)){
+            total*=node.getValue();
+        }
     }
 
     public void visitLeaf(TreeLeaf leaf) {
@@ -104,17 +109,27 @@ class ProductOfRedNodesVisitor extends TreeVis {
 }
 
 class FancyVisitor extends TreeVis {
+    private int totalValuesOfGreenLeaf=0;
+    private int totalValuesOfNonLeafNodes=0;
     public int getResult() {
         //implement this
-        return 0;
+        return Math.abs(totalValuesOfGreenLeaf-totalValuesOfNonLeafNodes);
     }
 
     public void visitNode(TreeNode node) {
         //implement this
+        if(node.getDepth()==0){
+            totalValuesOfNonLeafNodes+=node.getValue();
+            System.out.println(node.getValue());
+        }
     }
 
     public void visitLeaf(TreeLeaf leaf) {
         //implement this
+        if(leaf.getColor().equals(Color.GREEN)){
+            totalValuesOfGreenLeaf*=leaf.getValue();
+            System.out.println(leaf.getValue());
+        }
     }
 }
 
@@ -122,25 +137,49 @@ public class Solution {
 
     public static Tree solve() {
         //read the tree from STDIN and return its root as a return value of this function
-        return null;
+        Scanner input = new Scanner(System.in);
+        int numberOfNodes = input.nextInt();
+        input.nextLine();
+        String[] nodeValues = input.nextLine().split(" ");
+        String[] nodeColors = input.nextLine().split(" ");
+
+        int[] depths= new int[numberOfNodes];
+        depths[0]=0;
+        TreeNode root = new TreeNode(Integer.valueOf(nodeValues[0]),
+                Color.values()[Integer.valueOf(nodeColors[0])],
+                0);
+        for (int i = 1; i < numberOfNodes; i++) {
+            int nodeValue = Integer.valueOf(nodeValues[i]);
+            Color nodeColor = Color.values()[Integer.valueOf(nodeColors[i])];
+            int u = input.nextInt();
+            int v = input.nextInt();
+            if(u==1){
+                depths[v-1] = 1;
+            } else {
+                depths[v-1] = depths[u-1]+1;
+            }
+            Tree node = new TreeNode(nodeValue,nodeColor,depths[v-1]);
+            root.addChild(node);
+        }
+        return root;
     }
 
 
     public static void main(String[] args) {
         Tree root = solve();
-        SumInLeavesVisitor vis1 = new SumInLeavesVisitor();
+//        SumInLeavesVisitor vis1 = new SumInLeavesVisitor();
         ProductOfRedNodesVisitor vis2 = new ProductOfRedNodesVisitor();
         FancyVisitor vis3 = new FancyVisitor();
 
-        root.accept(vis1);
+//        root.accept(vis1);
         root.accept(vis2);
         root.accept(vis3);
 
-        int res1 = vis1.getResult();
+//        int res1 = vis1.getResult();
         int res2 = vis2.getResult();
         int res3 = vis3.getResult();
 
-        System.out.println(res1);
+//        System.out.println(res1);
         System.out.println(res2);
         System.out.println(res3);
     }
