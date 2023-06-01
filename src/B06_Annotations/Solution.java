@@ -10,7 +10,7 @@ import java.util.*;
 @Retention(RetentionPolicy.RUNTIME)
 @interface FamilyBudget {
     String userRole() default "GUEST";
-	/*TODO ~~Complete the interface~~*/
+    int budgetLimit() default 100;                                                  /*~~Complete the interface~~*/
 }
 
 class FamilyMember {
@@ -44,9 +44,9 @@ public class Solution {
                         FamilyBudget family = method
                                 .getAnnotation(FamilyBudget.class);
                         String userRole = family.userRole();
-                        int budgetLimit = -1 /*TODO ~~Complete the interface~~*/;
+                        int budgetLimit = family.budgetLimit();                       /*~~Complete the interface~~*/
                         if (userRole.equals(role)) {
-                            if(false/*TODO ~~Complete the interface~~*/){
+                            if(userRole.equals(role)){                               /*~~Complete the interface~~*/
                                 method.invoke(FamilyMember.class.newInstance(),
                                         budgetLimit, spend);
                             }else{
