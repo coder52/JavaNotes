@@ -1,7 +1,5 @@
 package B06_Annotations;
 
-import com.sun.xml.internal.bind.v2.TODO;
-
 import java.lang.annotation.*;
 import java.lang.reflect.*;
 import java.util.*;
@@ -10,18 +8,18 @@ import java.util.*;
 @Retention(RetentionPolicy.RUNTIME)
 @interface FamilyBudget {
     String userRole() default "GUEST";
-    int budgetLimit() default 100;                                                  /*~~Complete the interface~~*/
+    int budgetLimit() default 0;                                                  /*~~Complete the interface~~*/
 }
 
 class FamilyMember {
-    /*TODO ~~Complete the interface~~*/
+    @FamilyBudget(userRole = "SENIOR", budgetLimit = 100)                         /*~~Complete the interface~~*/
     public void seniorMember(int budget, int moneySpend) {
         System.out.println("Senior Member");
         System.out.println("Spend: " + moneySpend);
         System.out.println("Budget Left: " + (budget - moneySpend));
     }
 
-    /*TODO ~~Complete the interface~~*/
+    @FamilyBudget(userRole = "JUNIOR", budgetLimit = 50)                            /*~~Complete the interface~~*/
     public void juniorUser(int budget, int moneySpend) {
         System.out.println("Junior Member");
         System.out.println("Spend: " + moneySpend);
@@ -46,7 +44,7 @@ public class Solution {
                         String userRole = family.userRole();
                         int budgetLimit = family.budgetLimit();                       /*~~Complete the interface~~*/
                         if (userRole.equals(role)) {
-                            if(userRole.equals(role)){                               /*~~Complete the interface~~*/
+                            if(budgetLimit>=spend){                                   /*~~Complete the interface~~*/
                                 method.invoke(FamilyMember.class.newInstance(),
                                         budgetLimit, spend);
                             }else{
