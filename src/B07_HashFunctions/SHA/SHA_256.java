@@ -1,4 +1,4 @@
-package B07_SHA;
+package B07_HashFunctions.SHA;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
