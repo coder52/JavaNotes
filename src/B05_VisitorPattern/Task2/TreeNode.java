@@ -11,14 +11,9 @@ public class TreeNode extends Tree {
 
     public void accept(TreeVis visitor) {
         visitor.visitNode(this);
-        System.out.println("########################");
         for (Tree child : children) {
-            System.out.println("%%%%%%%");
-            System.out.println(child.getColor()+" "+ child.getValue()+ " " +child.getDepth());
             child.accept(visitor);
-            System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
         }
-        System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
     }
 
     public void addChild(Tree child) {
