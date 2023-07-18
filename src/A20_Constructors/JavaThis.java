@@ -4,7 +4,11 @@ package A20_Constructors;
 // In java, this is a reference variable that refers to the current object.
 
 class Employe{
-    int rollno;
+    public int getRollno() {
+        return rollno;
+    }
+
+    private int rollno;
     String name;
     float fee;
     Employe(int rollno,String name){
@@ -18,6 +22,10 @@ class Employe{
     }
 
     void display(){System.out.println(rollno+" "+name+" "+fee);}
+
+
+
+
 }
 
 public class JavaThis {

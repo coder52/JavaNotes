@@ -1,4 +1,4 @@
-package A00.oop.classes.example;
+package A00.oop.example;
 
 class Employee {
     private int id;

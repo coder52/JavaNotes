@@ -1,4 +1,4 @@
-package B08_LambdaExpressions.Task1;
+package B08_LambdaExpressions;
 
 import java.io.*;
 import java.util.*;

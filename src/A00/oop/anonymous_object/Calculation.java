@@ -1,4 +1,4 @@
-package A00.oop.classes.anonymous_object;
+package A00.oop.anonymous_object;
 
 class Calculation{
     void fact(int  n){

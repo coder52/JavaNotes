@@ -1,5 +1,11 @@
 package A32_Aggregation;
 
+/*
+ Aggregation'dan kasit toplamadir. Aslinda bu association'in kisimlarindan bir tanesidir. Digeri ise composition
+ 'dur. Aggregation oldugunda butun sinif bazi parcalardan olusur ki o parcalar tek baslarina da ise yararlar
+ yani butun olan sinif silinirse parcalar yinede iseyarar. Fakat composition'da ise butun sinif silinirse parca
+ siniflar ise yaramayacaktir.
+ */
 public class Emp {
 	int id;  
 	String name;  
@@ -12,19 +18,19 @@ public class Emp {
 	}  
 	  
 	void display(){  
-	System.out.println(id+" "+name);  
-	System.out.println(address.city+" "+address.state+" "+address.country);  
+		System.out.println(id+" "+name);
+		System.out.println(address.city+" "+address.state+" "+address.country);
 	}  
 	  
 	public static void main(String[] args) {  
-	Address address1=new Address("gzb","UP","india");  
-	Address address2=new Address("gno","UP","india");  
-	  
-	Emp e=new Emp(111,"varun",address1);  
-	Emp e2=new Emp(112,"arun",address2);  
-	      
-	e.display();  
-	e2.display();  
+		Address address1=new Address("gzb","UP","india");
+		Address address2=new Address("gno","UP","india");
+
+		Emp e=new Emp(111,"varun",address1);
+		Emp e2=new Emp(112,"arun",address2);
+
+		e.display();
+		e2.display();
 	      
 	}  
 
