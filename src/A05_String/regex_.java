@@ -8,10 +8,11 @@ public class regex_ {
 
         System.out.println(text3.replaceFirst("[A-Z]","b"));
         System.out.println(text3.replaceAll("[A-Z]","b"));
+        System.out.println(text3.replace("E","e"));
 
         String str = "$18MM";
 
-        str = str.replaceAll("[a-zA-Z]","");
+        str = str.replaceAll("[a-zA-Z$]","");
 
         System.out.println(str);
 

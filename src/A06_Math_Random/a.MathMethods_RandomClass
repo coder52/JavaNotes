@@ -13,6 +13,7 @@ Math.floor()        It is used to find the largest integer value which is less t
                     or equal to the argument and is equal to the mathematical integer of a double value.
 Math.random()       It returns a double value with a positive sign, greater than or equal to 0.0 and less than 1.0.
 
+(int)(Math.random()*n)                            Formula of random number between zero and n
 (int)( Math.random() * ((max-min)+1) ) + min        Formula of random number between to ranges
 -----------------------------------------------------------------------------------------------------------------------
 
