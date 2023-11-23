@@ -1,7 +1,6 @@
 package B02b_Comparable;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 /*
 Comperators'da ki Task1 ornegini bu sefer Comparable interface'ini kullanarak yapalim.
@@ -46,10 +45,14 @@ class Player implements Comparable<Player> {
         this.name = name;
         this.score = score;
     }
-
+    // Comparable interface'i implement edildiginde bu metodun Override edilmesi gerekiyor.
+    // Asagida gordugunuz gibi compare yada compareTo metodlarini kullanarak siralama argumanlarinin
+    // bu class icin ne olmasi gerektigini belirtiyoruz. Boylece sorting yapan metodlar bu class ile olusturulmus
+    // object'leri nasil siralayacaklarini bilebilecekler.
     @Override
     public int compareTo(Player other) {
-        return Integer.compare(this.score, other.score);
+        // first look at score, if it sorted try to sort in name ...
+        return this.score == other.score ? this.name.compareTo(other.name):Integer.compare(this.score, other.score);
     }
 }
 
