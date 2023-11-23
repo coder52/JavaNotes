@@ -1,12 +1,16 @@
-package B02_Comperators;
+package B02b_Comparable;
+
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
-import java.util.*;
 /*
+Comperators'da ki Task1 ornegini bu sefer Comparable interface'ini kullanarak yapalim.
 Bu Taskta consola girilen isim ve scordan olusan belli sayida ki girdiyi score gore siraliyoruz scoru ayni olanlari ise
 ismine gore siralamamiz gerekiyor. Bunun icin Comparotor interfaceni implement edecegiz ve boyle bir Comparator'un nasil
 kullanildigini ogreniyoruz.
 Ornegin;
  */
+
 /*
 
         10
@@ -33,21 +37,8 @@ girdisi icin sonuc;
         dee 0
 olmalidir.
  */
-class Checker implements Comparator{
-    public int compare(Object obj1,Object obj2){
-        Player p1=(Player) obj1;
-        Player p2=(Player) obj2;
 
-        if(p1.score==p2.score)
-            return p1.name.compareTo(p2.name); // burada return 0; yazmaliyiz fakat scor'u ayni olanlari isimlere gore
-        else if(p1.score>p2.score)                      //siralamamiz gerektiginden boyle yazdik. Yani String'in compareTo
-            return -1;                                           // methodunu kullandik.
-        else
-            return 1;
-    }
-}
-
-class Player{
+class Player implements Comparable<Player> {
     String name;
     int score;
 
@@ -55,23 +46,26 @@ class Player{
         this.name = name;
         this.score = score;
     }
+
+    @Override
+    public int compareTo(Player other) {
+        return Integer.compare(this.score, other.score);
+    }
 }
 
 class Task1 {
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
         Player[] player = new Player[n];
-        Checker checker = new Checker();
 
         for(int i = 0; i < n; i++){
             player[i] = new Player(scan.next(), scan.nextInt());
         }
         scan.close();
 
-        Arrays.sort(player, checker);
+        Arrays.sort(player);
         for (Player value : player) {
             System.out.printf("%s %s\n", value.name, value.score);
         }
