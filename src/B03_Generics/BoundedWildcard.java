@@ -3,7 +3,7 @@ package B03_Generics;
 import java.util.ArrayList;
 
 public class BoundedWildcard {
-    private static Double add(ArrayList<? extends Number> num) {
+    private static Double add(ArrayList<? extends Number> num) {  //?= Number class'ini extends yapan butun class'lar
 
         double sum=0.0;
 
