@@ -17,7 +17,8 @@ package B08_LambdaExpressions;
     Asagida ayni zamanda lambda functionun bir metoda parametre olarak verilip kullanilmasina da ornek veriliyor
 
     Bunun yaninda java'da zaten uretilmis bazi lambda fonksiyonlari vardir ve bunlar direk programlanip kullanilabilir.
-    Yani bunlar icin FunctionalInterface yazmak gerekmez. Mesela Consumer, Predicate, Supplier,... v.s.
+    Yani bunlar icin FunctionalInterface yazmak gerekmez. Mesela Consumer, Predicate, Supplier,... v.s. javada zaten interface'si
+    var olan lambda fonksiyonleridir.
  */
 
 public class JavaFunctionalInterface {
