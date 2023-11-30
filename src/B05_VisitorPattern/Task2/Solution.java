@@ -30,25 +30,6 @@ public class Solution {
         HashSet<Integer> roots = new HashSet<>(u_set);
         roots.removeAll(v_set);
 
-        /////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////////
-        System.out.println("nodeValues :" + nodeValues);
-        for (String ch:nodeValues) {
-            System.out.print(ch+" ");
-        }
-        System.out.println();
-        System.out.println(".................................................");
-        System.out.println("nodeColors :" + nodeColors);
-        for (String ch:nodeColors) {
-            System.out.print(ch+" ");
-        }
-        System.out.println();
-        System.out.println(".................................................");
-        System.out.println("leaves :"+leaves);
-        System.out.println("roots :"+roots);
-        ///////////////////////////////////////////////////////
-        ///////////////////////////////////////////////////////
-
         int[] depths= new int[numberOfNodes+1];
         for (int num = 0; num < u_list.size(); num++) {
             if(roots.contains(u_list.get(num))){
@@ -57,16 +38,6 @@ public class Solution {
                 depths[v_list.get(num)] = depths[u_list.get(num)]+1;
             }
         }
-
-        ////////////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////////
-        System.out.println("depth : "+depths);
-        for (int depth:depths) {
-            System.out.print(depth+ " ");
-        }
-        System.out.println();
-        //////////////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////
 
         TreeNode root = new TreeNode(Integer.valueOf(nodeValues[0]),Color.values()[Integer.valueOf(nodeColors[0])],0);
         for (int i = 1; i < numberOfNodes; i++) {

@@ -1,4 +1,4 @@
-package B02_Comperators;
+package B02a_Comperators;
 
 import java.util.*;
 

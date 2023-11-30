@@ -11,12 +11,12 @@ public class JavaCustomExeption {
             System.out.println("welcome to vote");
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         try{
             validate(13);
         }catch(KucukYasHatasi m){
-            System.out.println("Exception occured: "+m);
+            System.out.println("Exception occurred: "+m);
         }
 
         System.out.println("rest of the code...");

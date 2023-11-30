@@ -1,9 +1,8 @@
-package A04_Scanner.Tasks;
+package A04_Scanner.ScanFromFile;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -21,7 +20,7 @@ son olarak da arrayin yeni sekli basilacak.
 public class ScanFromTextFile {
     public static void main(String[] args) throws FileNotFoundException {
         // pass the path to the file as a parameter
-        File file = new File("C:\\Users\\Sahin\\IdeaProjects\\JavaCourse\\src\\day5Scanner\\Tasks\\Text");
+        File file = new File("src/A04_Scanner/ScanFromFile/Text");
         Scanner scan = new Scanner(file);
 
         int n = scan.nextInt();

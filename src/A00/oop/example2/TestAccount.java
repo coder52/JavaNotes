@@ -1,4 +1,4 @@
-package A00.oop.classes.example2;
+package A00.oop.example2;
 
 public class TestAccount {
 

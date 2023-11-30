@@ -13,13 +13,15 @@ olunmustur. Bu durumda genel olarak Generics icin 3 faydadan bahsedilebilir.
 
 Generic class, method v.s yazilirken type'lar icin bazi harflar sembol olarak kullanilir. Bunlardan bazilari soyle:
     T - Type
+    S - second Type
     E - Element
     K - Key
     N - Number
     V - Value
+    R - Return
 
-List<?> Generics bu sekilde gosterilecek olursa ? (Unbounded Wildcard) her turu temsil eder bunun kullanildigi bir method icersinde her turun kabul
-edildigi islemler yurutulmelidir.
+List<?> Generics bu sekilde gosterilecek olursa ? (Unbounded Wildcard) her turu temsil eder bunun kullanildigi bir method
+icersinde her turun kabul edildigi islemler yurutulmelidir.
 
 ArrayList<? extends Number>     Bura da ? bounded wildcard diye adlandirilir ve Number class'in tum child class'larini
 (yani Integer, Double, ...) temsil eder.

@@ -1,5 +1,6 @@
 package A40_Interfaces.DefaultMethodInInterface;
-// Since Java 8, we can have method body in interface. But we need to make it default method. Let's see an example:
+// Since Java 8, we can have method body in interface.
+// But we need to make it default method. Let's see an example:
 interface Drawable{
 
     void draw();

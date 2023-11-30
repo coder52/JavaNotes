@@ -1,7 +1,7 @@
 package B05_VisitorPattern.Task2;
 
 public class ProductOfRedNodesVisitor extends TreeVis {
-    long total=1;
+    long total=1L;
     public int getResult() {
         //implement this
         int t = (int) (total%(Math.pow(10,9)+7));

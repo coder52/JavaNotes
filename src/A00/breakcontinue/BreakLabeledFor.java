@@ -4,17 +4,25 @@ public class BreakLabeledFor {
 
     public static void main(String [] args){
 
-        aa:   // bu etiket distaki for loopu iptal eder
+        aa:
 
         for(int i=0;i<6;i++){
-            bb:       // bu etiket icteki for loopu iptal eder.
+
+            bb:
+
             for(int j=1;j<6;j++){
+
                 if(i==j){
-                    break bb;
+
+                    break bb;   // i=j sarti saglandiginda bb'den hemen sonra gelen for loop icin continue calistirilacak
+
                 }
-                System.out.println(i + " " + j);
+
+                System.out.println( i + " " + j );
+
             }
-            if(i==4) break aa;
+
+            if(i==4) break aa; // i=4 sarti saglandiginda aa'dan hemen sonra gelen for loop icin break calistirilacak
 
         }
 

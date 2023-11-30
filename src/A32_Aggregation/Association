@@ -1,0 +1,8 @@
+Association
+    i. Aggregation
+   ii. Composition
+    
+Aggregation'dan kasit toplamadir. Aslinda bu association'in kisimlarindan bir tanesidir. Digeri ise composition 
+ 'dur. Aggregation oldugunda butun sinif bazi parcalardan olusur ki o parcalar tek baslarina da ise yararlar 
+ yani butun olan sinif silinirse parcalar yinede iseyarar. Fakat composition'da ise butun sinif silinirse parca 
+ siniflar ise yaramayacaktir.

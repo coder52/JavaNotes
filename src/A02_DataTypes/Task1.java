@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Number of tests : ");
+        System.out.print("Enter how many numbers you want to test.(Max. 5): ");
         int t=sc.nextInt();
+        if(t>5) t=5;
 
         for(int i=0;i<t;i++)
         {

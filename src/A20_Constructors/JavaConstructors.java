@@ -40,7 +40,7 @@ public class JavaConstructors {
         student2.printInfo();
 
         Student student3 = new Student("Cemil","Camci",3);
-        student2.printInfo();
+        student3.printInfo();
 
     }
 }

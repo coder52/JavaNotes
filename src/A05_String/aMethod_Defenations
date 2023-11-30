@@ -30,7 +30,7 @@ replaceAll()        Replaces each substring of this string that matches the
                     given regular expression with the given replacement         String
 split()             Splits a string into an array of substrings                 String[]
 -------------------------------------------------------------------------------------------
-
+String.format(......)                   Python'da ki format metodu gibi calisan bir format metodu
 int num1 = Integer.parseInt(str1);      This script convert string type number into integer type
                                         if there is a character in str1 gives error
 boolean bln1 = Boolean.valueOf(str4);   ...Boolean.parseBoolean(str4); ile ayni

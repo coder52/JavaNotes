@@ -6,10 +6,10 @@ public class substring_isEmpty_contains_equals {
 
         String message = "How are you today?";
 
-        String subS = message.substring(4,13);   // 4 haric 13 dahil, saymaya birden basla
+        String subS = message.substring(4,13);   // 4 dahil 13 haric, saymaya sifirdan basla
         System.out.println(subS);
 
-        System.out.println(message.substring(8));  // 8 den sonra ki tum text (8 haric), saymaya birden basla
+        System.out.println(message.substring(8));  // 8 den sonra ki tum text (8 dahil), saymaya sifirdan basla
 
         boolean check = message.isEmpty();
         System.out.println(check);

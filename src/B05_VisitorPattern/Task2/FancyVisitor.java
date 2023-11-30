@@ -10,7 +10,7 @@ public class FancyVisitor extends TreeVis {
 
     public void visitNode(TreeNode node) {
         //implement this
-        if(node.getDepth()==0){
+        if(node.getDepth()%2==0){
             totalValuesOfNonLeafNodes+=node.getValue();
         }
     }

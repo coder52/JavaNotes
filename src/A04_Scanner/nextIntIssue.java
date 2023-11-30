@@ -9,7 +9,7 @@ import java.util.Scanner;
    .nextLine() metodu \n karakterini gorunce Enter tusuna basildi kabul eder ve girdi beklemeden islemi sonlandirir. Buna
    engel olmak icin scan.nextLine(); satirini araya ekliyoruz.
  */
-public class Task1 {
+public class nextIntIssue {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();

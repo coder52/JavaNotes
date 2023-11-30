@@ -1,4 +1,4 @@
-package B02_Comperators;
+package B02a_Comperators;
 import java.util.Scanner;
 import java.util.*;
 /*
@@ -41,9 +41,8 @@ class Checker implements Comparator{
         if(p1.score==p2.score)
             return p1.name.compareTo(p2.name); // burada return 0; yazmaliyiz fakat scor'u ayni olanlari isimlere gore
         else if(p1.score>p2.score)                      //siralamamiz gerektiginden boyle yazdik. Yani String'in compareTo
-            return -1;                                           // methodunu kullandik.
-        else
-            return 1;
+            return -1;                                         // methodunu kullandik.
+        return 1;
     }
 }
 

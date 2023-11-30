@@ -22,4 +22,4 @@ public class forloop {
 
 }
 
-// infinitive for loop for(;;){}
+// for(;;){}        //infinitive for loop
