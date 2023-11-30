@@ -19,6 +19,7 @@ package B08_LambdaExpressions;
     Bunun yaninda java'da zaten uretilmis bazi lambda fonksiyonlari vardir ve bunlar direk programlanip kullanilabilir.
     Yani bunlar icin FunctionalInterface yazmak gerekmez. Mesela Consumer, Predicate, Supplier,... v.s. javada zaten interface'si
     var olan lambda fonksiyonleridir.
+    https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
  */
 
 public class JavaFunctionalInterface {
