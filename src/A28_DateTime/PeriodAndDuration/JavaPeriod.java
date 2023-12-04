@@ -11,7 +11,7 @@ public class JavaPeriod {
         LocalDate today = LocalDate.now();
 
         Period between = Period.between(newYear, today);  // Bu gun ile yilbasi arasindaki farki verir.
-
+        System.out.println("AA "+between);
         int years = between.getYears();  //yil farki
         int months = between.getMonths(); // ay farki
         int days = between.getDays();       // gun farki
