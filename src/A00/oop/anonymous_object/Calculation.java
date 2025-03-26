@@ -1,7 +1,7 @@
 package A00.oop.anonymous_object;
 
 class Calculation{
-    void fact(int  n){
+    void fact(int n){
         int fact=1;
         for(int i=1;i<=n;i++){
             fact=fact*i;

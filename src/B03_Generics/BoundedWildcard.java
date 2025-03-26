@@ -23,8 +23,8 @@ public class BoundedWildcard {
         System.out.println("displaying the sum= "+add(l1));
 
         ArrayList<Double> l2=new ArrayList<>();
-        l2.add(30.0);
-        l2.add(40.0);
+        l2.add(30.1);
+        l2.add(40.4);
         System.out.println("displaying the sum= "+add(l2));
 
 

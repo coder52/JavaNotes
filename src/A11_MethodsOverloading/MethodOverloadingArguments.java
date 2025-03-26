@@ -33,18 +33,7 @@ public class MethodOverloadingArguments {
 	public static int sum(int a, int b, int c) {
 		return a+b+c;
 	}
-	
-	/*
-	public static int sum(int[] numbers) {
-		
-		int sum = 0;
-		for(int num : numbers) {
-			sum+=num;
-		}
-		return sum;
-	}
-	*/
-	
+
 	public static int sum(int... numbers) {
 //	public static int sum(int[] numbers) {
 		int sum = 0;

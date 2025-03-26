@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class AutoboxingUnboxing {
 	
 	// Autoboxing: primitive variabllarin (int, long, ...) Object variabllara (Integer, Long, ... ) otomatik degismesi
-	// Unboxing:  Object variabllarin primitive variabllara (Integer, Long, ... ) otomatik degismesi
+	// Unboxing:  Object variabllarin (Integer, Long, ... ) primitive variabllara otomatik degismesi
 	// Bunlar eskiden otomatik degilmis simdi biz farkina bile varmiyoruz. 
 	public static void main(String[] args) {
 		

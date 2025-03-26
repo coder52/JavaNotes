@@ -14,7 +14,7 @@ public class BreakLabeledFor {
 
                 if(i==j){
 
-                    break bb;   // i=j sarti saglandiginda bb'den hemen sonra gelen for loop icin continue calistirilacak
+                    break bb;   // i=j sarti saglandiginda bb etiketinden hemen sonra gelen for loop'u atlar
 
                 }
 
@@ -22,7 +22,7 @@ public class BreakLabeledFor {
 
             }
 
-            if(i==4) break aa; // i=4 sarti saglandiginda aa'dan hemen sonra gelen for loop icin break calistirilacak
+            if(i==4) break aa; // i=4 sarti saglandiginda aa etiketindan hemen sonra gelen for loop'u atlar
 
         }
 

@@ -14,7 +14,7 @@ It internally creates a static and final class for the enum.
     public enum Season { WINTER, SPRING, SUMMER, FALL }
     Season.values()         konstantlarin objectini verir yani for-each dongusunde kullanabilirsin.
     Season.FALL.ordinal()   enumun icinde ki FALL konstutunun indexini verir. Bu ornekte 3.
-    Season.valueOf("WINTER")         -->       WINTER
+    Season.valueOf("WINTER")             -->   WINTER
     Season.valueOf("WINTER").ordinal()   -->   0
 
 day41_42 daki MyCurrencyEnum ornegi enum icersinde metod olusturmaya guzel bir ornek olmus. Bakilabilir.
@@ -22,8 +22,7 @@ day41_42 daki MyCurrencyEnum ornegi enum icersinde metod olusturmaya guzel bir o
 If you put main() method inside the enum, you can run the enum directly.
 
 Constructor of enum type is private. If you don't declare private compiler internally creates private constructor.
-
-We can NOT create the instance of Enum by new keyword.
+That's why we can NOT create the instance of Enum by new keyword.
 
 
 
